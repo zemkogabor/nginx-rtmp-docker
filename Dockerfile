@@ -1,10 +1,8 @@
-FROM buildpack-deps:stretch
-
-LABEL maintainer="Sebastian Ramirez <tiangolo@gmail.com>"
+FROM buildpack-deps:buster
 
 # Versions of Nginx and nginx-rtmp-module to use
-ENV NGINX_VERSION nginx-1.18.0
-ENV NGINX_RTMP_MODULE_VERSION 1.2.1
+ENV NGINX_VERSION nginx-1.21.0
+ENV NGINX_RTMP_MODULE_VERSION 1.2.2
 
 # Install dependencies
 RUN apt-get update && \
